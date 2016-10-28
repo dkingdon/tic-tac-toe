@@ -1,8 +1,16 @@
 #board {
   margin-top: 10px;
+  text-align: center;
 }
 
 .box {
   border: 1px solid black;
   height: 150px;
+}
+
+.btn {
+  position: fixed;
+  right: 52%;
+  left: 48%;
+  margin-top: 20px;
 }
