@@ -5,7 +5,6 @@ $(document).ready(function() {
   var testVar
   var test = 'O'
 
-
   $('.col-md-4').click(function() {
         /* Grabs unique square id and places it in the var testVar */
     testVar = (this.id);
@@ -62,32 +61,3 @@ $(document).ready(function() {
     }
  });
 });
-
-
-// alert('linked!');
-
-
-
-
-// TEST CODE save for later
-// var squares = $('.box');
-//
-// // this code listens for a click and logs response
-// $('.col-md-4').on('click', handleClick);
-//
-// function handleClick(event){
-//     if (event) {
-//     console.log('you just clicked a box');
-//     }
-// }
-//
-// // successfully changes text in box to X, PROBLEM: changes ALL of the boxes, not just the one clicked on.
-// $('.col-md-4').on('click', function handleClick() {
-//     $(".col-md-4").text("X")
-// } );
-//
-// // Kinda works
-// $('.col-md-4').on('click', function handleClick() {
-//     if ($("#topRight")){
-//         $("#topRight").text("p");
-//     }
