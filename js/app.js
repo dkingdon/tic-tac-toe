@@ -2,57 +2,57 @@
 $(document).ready(function() {
   // all code to manipulate the DOM
   // goes inside this function
-  var testVar
-  var test = 'O'
+  var targetId
+  var turnSymbol = 'O'
 
   $('.col-md-4').click(function() {
         /* Grabs unique square id and places it in the var testVar */
-    testVar = (this.id);
+    targetId = (this.id);
     /* Decideds if the square is clickable via an id check */
-    if (testVar !== 'notAvail') {
+    if (targetId !== 'notAvail') {
         /* Contitional statement that determines whos turn it is X or O */
-        if (test === 'O'){
-            test = 'X';
+        if (turnSymbol === 'O'){
+            turnSymbol = 'X';
         }
         else {
-            test = 'O';
+            turnSymbol = 'O';
         }
         /* Change square text value */
-        switch (testVar) {
+        switch (targetId) {
             case 'topLeft':
-                $('#topLeft').text(test);
+                $('#topLeft').text(turnSymbol);
                 $('#topLeft').prop('id', 'notAvail')
                 break;
             case 'topMiddle':
-                $('#topMiddle').text(test);
+                $('#topMiddle').text(turnSymbol);
                 $('#topMiddle').prop('id', 'notAvail');
                 break;
             case 'topRight':
-                $('#topRight').text(test);
+                $('#topRight').text(turnSymbol);
                 $('#topRight').prop('id', 'notAvail');
                 break;
             case 'midLeft':
-                $('#midLeft').text(test);
+                $('#midLeft').text(turnSymbol);
                 $('#midLeft').prop('id', 'notAvail');
                 break;
             case 'midMiddle':
-                $('#midMiddle').text(test);
+                $('#midMiddle').text(turnSymbol);
                 $('#midMiddle').prop('id', 'notAvail');
                 break;
             case 'midRight':
-                $('#midRight').text(test);
+                $('#midRight').text(turnSymbol);
                 $('#midRight').prop('id', 'notAvail');
                 break;
             case 'botLeft':
-                $('#botLeft').text(test);
+                $('#botLeft').text(turnSymbol);
                 $('#botLeft').prop('id', 'notAvail');
                 break;
             case 'botMiddle':
-                $('#botMiddle').text(test);
+                $('#botMiddle').text(turnSymbol);
                 $('#botMiddle').prop('id', 'notAvail');
                 break;
             case 'botRight':
-                $('#botRight').text(test);
+                $('#botRight').text(turnSymbol);
                 $('#botRight').prop('id', 'notAvail');
                 break;
             default:
